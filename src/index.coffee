@@ -175,13 +175,12 @@ m.on 'exit', ->
 
 m.on 'message', (m)->
   messages.push m
+  render()
   
 
 m.connect()
 
-
-cycle = setInterval ->
-  m.check()
+render = ->
   t = getTable width
   messages = _(messages).sortBy((m) -> new Date(m.date[0]))
   messages.forEach (m)->
@@ -194,6 +193,9 @@ cycle = setInterval ->
     .position(0, 3)
     .write(t.toString())
 
+
+cycle = setInterval ->
+  m.check()
 , 5000
 
 
