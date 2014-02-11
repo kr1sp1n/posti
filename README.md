@@ -3,22 +3,23 @@ posti
 
 Simple IMAP for the terminal and tmux.
 Just to see if I received any new mails in my inbox.
-It will check your INBOX every 5 seconds for 'UNSEEN' messages.
+
 
 ## Install
 
 ```bash
 git clone git@github.com:kr1sp1n/posti.git
 npm install -g
-
+```
 
 ## Usage
+It will check your INBOX every 5 seconds for 'UNSEEN' messages.
 
 ```bash
 posti -u youremail@gmail.com -p yourpassword -h imap.gmail.com
 ```
 
-OUTPUT:
+__OUTPUT__
 
 ```bash
 INBOX
