@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var app = require(__dirname + "/../index")
+app.run()

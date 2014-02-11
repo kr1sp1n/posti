@@ -1,0 +1,32 @@
+{
+  "name": "posti",
+  "version": "0.0.1",
+  "description": "Simple IMAP for the terminal and tmux",
+  "main": "./src/index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/coffee ./src/index.coffee"
+  },
+  "keywords": [
+    "imap",
+    "gmail",
+    "retro",
+    "mail",
+    "ansi"
+  ],
+  "author": "kr1sp1n",
+  "license": "MIT",
+  "dependencies": {
+    "charm": "~0.2.0",
+    "coffee-script": "~1.7.1",
+    "imap": "~0.8.8",
+    "cli-table": "~0.3.0",
+    "moment": "~2.5.1",
+    "underscore": "~1.5.2",
+    "minimist": "0.0.7"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "posti": "./bin/posti"
+  }
+}
